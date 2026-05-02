@@ -3,6 +3,8 @@ services:
     name: bloodhub
     env: node
     plan: free
-    buildCommand: cd AI-Based-Emergency-Blood-Availability-System-main && yarn
-    startCommand: cd AI-Based-Emergency-Blood-Availability-System-main && npm run start
+    # Build frontend deps in nested folder
+    buildCommand: cd AI-Based-Emergency-Blood-Availability-System-main && npm install
+    # Start the backend so the service binds to Render's $PORT (backend reads process.env.PORT)
+    startCommand: cd AI-Based-Emergency-Blood-Availability-System-main/backend && npm start
     envVars: []
