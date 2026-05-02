@@ -1,0 +1,148 @@
+.donor-list-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.donor-list-container.empty p {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  border: 1px dashed #cbd5e1;
+}
+
+.donor-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 8px;
+}
+
+.donor-list-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.badge {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.donor-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.donor-entry-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0,0,0,0.02);
+  transition: transform 0.2s ease;
+}
+
+.donor-entry-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.donor-entry-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.donor-entry-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #fff1f2;
+  color: #e11d48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.donor-entry-details h4 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.donor-entry-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.blood-badge {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.status-badge.available {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.status-badge.unavailable {
+  background: #f8fafc;
+  color: #94a3b8;
+}
+
+.delete-entry-btn {
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-entry-btn:hover {
+  background: #fef2f2;
+  color: #ef4444;
+}

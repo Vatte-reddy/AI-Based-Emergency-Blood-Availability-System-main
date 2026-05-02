@@ -1,0 +1,257 @@
+.donor-module-wrapper {
+  padding: 80px 20px;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donor-form-card {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.card-header h2 {
+  color: #111827;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Progress Stepper */
+.progress-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 12px;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.step-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+.progress-step.active .step-num {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.progress-step.active .step-text {
+  color: #2563eb;
+}
+
+.progress-step.completed .step-num {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.progress-step.completed .step-text {
+  color: #10b981;
+}
+
+.progress-line {
+  flex: 0 0 60px;
+  height: 2px;
+  background: #e5e7eb;
+  margin-bottom: 20px; /* Aligned with circle center */
+  transition: all 0.3s ease;
+}
+
+.progress-line.active {
+  background: #10b981;
+}
+
+/* Form Styling */
+.clean-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.modern-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.modern-input svg {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.modern-input input, 
+.modern-input select, 
+.modern-input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #111827;
+}
+
+.modern-input:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.input-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .input-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* RFMT History Grid */
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.history-grid .input-group {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #f3f4f6;
+  transition: all 0.2s ease;
+}
+
+.history-grid .input-group:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-color: #e5e7eb;
+}
+
+.history-grid label {
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Buttons */
+.form-actions-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.btn-primary, .btn-submit {
+  width: 100%;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover, .btn-submit:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  flex: 1;
+  background: #ffffff;
+  color: #374151;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.optional {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.sub {
+  font-size: 10px;
+  color: #6b7280;
+}

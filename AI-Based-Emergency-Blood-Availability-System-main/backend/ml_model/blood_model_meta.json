@@ -1,0 +1,11 @@
+{
+  "feature_names": [
+    "Recency",
+    "Frequency",
+    "Monetary",
+    "Time"
+  ],
+  "positive_class": 1,
+  "description": "Donor response likelihood model using RFM-T features from training: Recency, Frequency, Monetary, Time. Ensure incoming payload keys match exactly (case-sensitive)."
+}
+
