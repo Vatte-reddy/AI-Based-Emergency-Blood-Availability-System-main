@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: bloodhub
+    env: node
+    plan: free
+    buildCommand: cd AI-Based-Emergency-Blood-Availability-System-main && yarn
+    startCommand: cd AI-Based-Emergency-Blood-Availability-System-main && npm run start
+    envVars: []

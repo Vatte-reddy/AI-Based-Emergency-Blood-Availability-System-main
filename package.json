@@ -1,0 +1,11 @@
+{
+  "name": "bloodhub-root",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "install": "cd AI-Based-Emergency-Blood-Availability-System-main && npm install",
+    "dev": "cd AI-Based-Emergency-Blood-Availability-System-main && npm run dev",
+    "start": "cd AI-Based-Emergency-Blood-Availability-System-main && npm run start",
+    "build": "cd AI-Based-Emergency-Blood-Availability-System-main && npm run build"
+  }
+}
